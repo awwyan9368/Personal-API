@@ -1,0 +1,16 @@
+{
+  "name": "personal-life-os",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal Life OS — 100% Free, Local-First Personal Life Analytics & REST API Platform",
+  "license": "MIT",
+  "scripts": {
+    "setup:windows": "powershell -ExecutionPolicy Bypass -File ./scripts/setup.ps1",
+    "start:windows": "powershell -ExecutionPolicy Bypass -File ./scripts/start.ps1",
+    "dev:frontend": "cd frontend && pnpm run dev",
+    "build:frontend": "cd frontend && pnpm run build",
+    "typecheck:frontend": "cd frontend && pnpm run typecheck",
+    "test:backend": "cd backend && .\\.venv\\Scripts\\pytest.exe"
+  }
+}
+

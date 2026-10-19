@@ -1,0 +1,62 @@
+# Personal Life OS - Git Ignore Rules
+# Never commit private personal data, databases, tokens, secrets, exports, or backups.
+
+# Local Databases
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+data/
+!data/.gitkeep
+
+# Exports & Backups
+exports/
+!exports/.gitkeep
+backups/
+!backups/.gitkeep
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.token
+.collector_token
+running_pids.json
+secrets/
+
+# Python / Backend
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+.pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tsbuildinfo
+next-env.d.ts
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
